@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "Internshala Sort By Stipend",
+    "description": "Sort By Stipend for Internship listings on Internshala.com",
+    "version": "0.2.0",
+    "author": "Eshaan7",
+    "permissions": ["webNavigation","activeTab"],
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": true
+    },
+    "browser_action": {
+      "default_icon": "icons/icon32-grey.png",
+      "default_popup": "popup.html"
+    }
+}
+  
