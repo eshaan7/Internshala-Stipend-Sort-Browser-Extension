@@ -1,11 +1,15 @@
 /* Modal Structure */
 
+:root {
+  --is-primary-color: #2f5876;
+}
+
 html,
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   margin: 0;
-  min-height: 180px;
+  /* min-height: 180px; */
   padding: 0;
   width: 384px;
 }
@@ -55,13 +59,22 @@ img {
 /* Content */
 
 #modal-content {
-  padding: 5px 22px;
+  padding: 1px 10px 10px 15px;
 }
 
 .btn-container {
   display: flex;
   align-items: center;
   font-size: 30px;
+}
+
+#sorter-btn {
+  color: white;
+  padding: 6px;
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--is-primary-color);
+  border: 1px solid var(--is-primary-color);
+  border-radius: 3%;
 }
 
 #status > .fa-check-circle {
@@ -80,30 +93,31 @@ img {
 
 #modal-footer {
   border-top: 0.5px solid #dadada;
-  height: 30px;
+  height: 10px;
   width: 100%;
   align-items: center;
+  margin: 0px !important;
 }
 
 .social-container {
   display: flex;
   justify-content: flex-end;
-  padding: 10px 1px;
+  padding: 3px 1px;
 }
 
 .flex {
   opacity: 1;
   transition: opacity 0.2s ease-in-out;
-  width: 35px;
+  width: 20px;
 }
 
 .flex:hover {
-  opacity: 0.7;
+  opacity: 0.5;
 }
 
 .flex .fa {
-  font-size: 20px;
-  color: #2f5876;
+  font-size: 12px;
+  color: var(--is-primary-color);
 }
 
 #trademark {
