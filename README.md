@@ -1,4 +1,4 @@
-# Internshala-Stipend-Sorter-Browser-Extension
+# Internshala-Stipend-Sort (Browser Extension)
 
 Chrome & Firefox add-on to add sorting functionality to Internshala. This lets you Order by stipend (descending) for Internship listings on Internshala.com
 
