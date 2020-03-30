@@ -11,4 +11,7 @@ Chrome & Firefox add-on to add sorting functionality to Internshala. This lets y
 If the links don't work,
 
 Clone this repository -> in google-chrome -> Extensions -> Load Unpacked -> Upload the Folder -> Extension should be added!
- 
+
+## Screenhot
+
+<img src="screenshot1.png" alt="popup screenshot"/> 
