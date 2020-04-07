@@ -10,7 +10,8 @@ Chrome & Firefox add-on to add sorting functionality to Internshala. This lets y
 
 If the links don't work,
 
-Clone this repository -> in google-chrome -> Extensions -> Load Unpacked -> Upload the Folder -> Extension should be added!
+1. Copy the [`sorter.js`](https://raw.githubusercontent.com/Eshaan7/Internshala-Stipend-Sort-Browser-Extension/master/sorter.js) from here and paste it into the browser's console when on Internshala's listing page.
+2. Clone this repository -> in google-chrome -> Extensions -> Load Unpacked -> Upload the Folder -> Extension should be added!
 
 ## Screenhot
 
