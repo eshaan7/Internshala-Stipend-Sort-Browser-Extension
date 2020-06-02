@@ -43,7 +43,7 @@ function sortByStipend(arr)
           if (el.stipend==="Unpaid" || el.stipend==="Performance Based" || el.stipend==="Not provided") {
               noStipends.push(el)
           }
-          else if (el.stipend.includes("/Month")) {
+          else if (el.stipend.includes("/Month") || el.stipend.includes("/month")) {
               const stipendStr = el.stipend.split("/")[0];
               if (stipendStr.includes("-")) {
                   const s = parseInt(stipendStr.split("-")[1])
@@ -68,15 +68,17 @@ function getStipendArray(internshipContainer)
     try {
         var stipendArray = new Array();
         var internships = internshipContainer.getElementsByClassName("individual_internship");
-        var internshipsArray = Array.from(internships).slice(0,internships.length-2);
+        var internshipsArray = Array.from(internships);
         internshipsArray.forEach(internship => {
             var s = internship
-                    .getElementsByClassName("internship_meta")[0]
-                    .getElementsByClassName("individual_internship_details")[0]
-                    .children[1]
-                    .children[0].tBodies[0].children[0]
-                    .getElementsByClassName("stipend_container_table_cell")[0]
-                    .innerText;
+                        .getElementsByClassName("internship_meta")[0]
+                        .getElementsByClassName("individual_internship_details")[0]
+                        .children[1]
+                        .children[1]
+                        .getElementsByClassName("stipend_container")[0]
+                        .getElementsByClassName("item_body")[0]
+                        .getElementsByClassName("stipend")[0]
+                        .innerText;
             stipendArray.push({"stipend": s, "element": internship});
         });
         return stipendArray;

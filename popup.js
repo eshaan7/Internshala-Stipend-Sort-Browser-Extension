@@ -41,6 +41,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
       '<i class="fa fa-check-circle"></i>';
   } else {
     document.getElementById("status").innerHTML =
-      '<i class="fa fa-times-circle"></i>';
+      '<i class="fa fa-times-circle"></i>'
+      + '<br><p>Check console for error.</p>';
   }
 });

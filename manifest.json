@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "Internshala Sort By Stipend",
     "description": "Sort By Stipend (descending) for Internship listings on Internshala.com",
-    "version": "0.3.0",
+    "version": "0.5.0",
     "author": "Eshaan7",
     "permissions": ["webNavigation","activeTab"],
     "icons": { 
